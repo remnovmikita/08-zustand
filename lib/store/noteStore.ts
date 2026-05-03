@@ -1,8 +1,9 @@
 // import { FormValues } from "@/components/NoteForm/NoteForm";
 
-import { NewNote } from "./api";
+
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
+import { NewNote } from "../api";
 
 const initialDraft: NewNote = {
   title: '',
