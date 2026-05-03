@@ -1,7 +1,7 @@
-// app/not-found.tsx
+
 import css from './page.module.css';
 import Link from 'next/link';
-import RedirectCountdown from '@/components/Not-Found/Not-found';
+import RedirectCountdown from '@/components/Not-Found/Not-found.clien';
 
 export default function NotFound() {
   return (
