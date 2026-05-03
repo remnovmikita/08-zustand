@@ -1,5 +1,5 @@
 // import { FormValues } from "@/components/NoteForm/NoteForm";
-import { Tags } from "@/types/note";
+
 import { NewNote } from "./api";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
