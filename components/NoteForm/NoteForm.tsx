@@ -27,7 +27,7 @@ const counterStore = useNoteDraftStore()
 
 const {draft, setDraft, clearDraft} = counterStore
 
-const handlChange = (
+const handleChange = (
   event: 
   React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
 ) =>{
@@ -61,8 +61,8 @@ const handleSubmit = (formData:FormData)=>{
           required 
           minLength={3} 
           maxLength={50} 
-          defaultValue={draft?.title}
-          onChange={handlChange}
+          value={draft?.title}
+          onChange={handleChange}
           />
       </div>
 
@@ -74,8 +74,8 @@ const handleSubmit = (formData:FormData)=>{
           rows={8} 
           className={css.textarea} 
           maxLength={500} 
-          defaultValue={draft?.content}
-          onChange={handlChange}
+          value={draft?.content}
+          onChange={handleChange}
           />
       </div>
 
@@ -86,8 +86,8 @@ const handleSubmit = (formData:FormData)=>{
           name="tag" 
           className={css.select} 
           required
-          defaultValue={draft?.tag}
-          onChange={handlChange}
+          value={draft?.tag}
+          onChange={handleChange}
           >
           <option value="Todo">Todo</option>
           <option value="Work">Work</option>
